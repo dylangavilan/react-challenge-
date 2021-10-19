@@ -1,6 +1,4 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-
 import { Link } from "react-router-dom";
 const Cards = ({ props }) => {
   return (
@@ -14,9 +12,10 @@ const Cards = ({ props }) => {
           ></img>
           <span className="align-center">{props.title}</span>
         </div>
-        <Button variant="primary" size="lg" active>
+        <button className="max-w-full px-30 text-center m-0 bg-gray-600 text-black">
           <Link to={`/moviedetail/${props.id}`}>View info</Link>
-        </Button>
+        </button>
+        <span> Rating:{props.vote_average}</span>
       </div>
     </div>
   );
