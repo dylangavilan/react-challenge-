@@ -1,10 +1,10 @@
 ### `npm-install`
 Se debe usar este comando para instalar las dependencias.
-Entre ellas axios, react router v6.
+Entre ellas estan react,react-redux,tailwind
 ### `npm start`
 Una vez instaladas con este comando podremos correr el server en nuestro localhost:3000
 
 ### `Descripción`
-
-En esta SPA podremos encontrar un componente Home, en el cual se renderizaran todas las mascotas traidas desde el backend. Esto con el fin de mostrar que funcionan correctamente los endpoint! Este componente Home, cada vez que se renderice hara una petición a nuestro backend para traer todas las mascotas. Tendremos un boton en el cual nos llevara a un formulario controlado, el cual nos permitira crear nuestra mascota. Este solamente tendra el boton de creado una vez que todos los campos se llene correctamente! Podremos agregar la fecha exacta de nacimiento de nuestra mascota o si es que no la recordamos un aproximado en años/meses
-
+En la pagina principal tendremos las peliculas mas relevantes, un searchbar el cual traera las peliculas que queramos desde la API, un filtrado por rating, hecho con 5 estrellas. La primer estrella filtrara las peliculas que tengan 0-2 de rating y asi sucesivamente.
+Si presionamos el boton view de las cartas de cada pelicula podremos acceder a su detalle.
+Al hacer boton en el searchbar si este se encuentra vacio vuelve a cargar todas las peliculas.
